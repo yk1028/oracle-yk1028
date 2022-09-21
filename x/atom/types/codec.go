@@ -3,7 +3,7 @@ package types
 import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	exportedOracle "github.com/relevant-community/oracle/x/oracle/exported"
+	exportedOracle "github.com/yk1028/oracle-yk1028/x/oracle/exported"
 )
 
 func RegisterCodec(cdc *codec.LegacyAmino) {
@@ -11,7 +11,7 @@ func RegisterCodec(cdc *codec.LegacyAmino) {
 
 func RegisterInterfaces(registry cdctypes.InterfaceRegistry) {
 	registry.RegisterInterface(
-		"relevantcommunity.oracle.oracle.Claim",
+		"yk1028.oracle-yk1028.oracle.Claim",
 		(*exportedOracle.Claim)(nil),
 		&AtomUsd{},
 	)

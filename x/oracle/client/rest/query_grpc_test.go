@@ -8,8 +8,8 @@ import (
 	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
 	"github.com/cosmos/cosmos-sdk/types/query"
 	proto "github.com/gogo/protobuf/proto"
-	"github.com/relevant-community/oracle/app"
-	"github.com/relevant-community/oracle/x/oracle/types"
+	"github.com/yk1028/oracle-yk1028/app"
+	"github.com/yk1028/oracle-yk1028/x/oracle/types"
 	"github.com/stretchr/testify/suite"
 
 	testnet "github.com/cosmos/cosmos-sdk/testutil/network"
@@ -61,7 +61,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 	}{
 		{
 			"Get Params",
-			fmt.Sprintf("%s/relevantcommunity/oracle/oracle/params", baseURL),
+			fmt.Sprintf("%s/yk1028/oracle-yk1028/oracle/params", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},
@@ -74,7 +74,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"Get Claim",
-			fmt.Sprintf("%s/relevantcommunity/oracle/oracle/claim/%s", baseURL, testHash.String()),
+			fmt.Sprintf("%s/yk1028/oracle-yk1028/oracle/claim/%s", baseURL, testHash.String()),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},
@@ -85,7 +85,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"Get all claims",
-			fmt.Sprintf("%s/relevantcommunity/oracle/oracle/allclaims", baseURL),
+			fmt.Sprintf("%s/yk1028/oracle-yk1028/oracle/allclaims", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},
@@ -98,7 +98,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"Get pending rounds",
-			fmt.Sprintf("%s/relevantcommunity/oracle/oracle/pending_rounds/test", baseURL),
+			fmt.Sprintf("%s/yk1028/oracle-yk1028/oracle/pending_rounds/test", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},
@@ -109,7 +109,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"Get round",
-			fmt.Sprintf("%s/relevantcommunity/oracle/oracle/round/test/1", baseURL),
+			fmt.Sprintf("%s/yk1028/oracle-yk1028/oracle/round/test/1", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},
@@ -120,7 +120,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"Get all rounds",
-			fmt.Sprintf("%s/relevantcommunity/oracle/oracle/all_rounds", baseURL),
+			fmt.Sprintf("%s/yk1028/oracle-yk1028/oracle/all_rounds", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},
@@ -133,7 +133,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"Get finlized round",
-			fmt.Sprintf("%s/relevantcommunity/oracle/oracle/finalized_round/test", baseURL),
+			fmt.Sprintf("%s/yk1028/oracle-yk1028/oracle/finalized_round/test", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},

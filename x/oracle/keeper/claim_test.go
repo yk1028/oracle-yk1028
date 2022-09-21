@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/relevant-community/oracle/x/oracle/types"
+	"github.com/yk1028/oracle-yk1028/x/oracle/types"
 )
 
 func (suite *KeeperTestSuite) TestCreateClaim() {

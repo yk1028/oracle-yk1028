@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/relevant-community/oracle/x/atom/types"
-	"github.com/relevant-community/oracle/x/oracle/client/cli"
-	oracletypes "github.com/relevant-community/oracle/x/oracle/types"
+	"github.com/yk1028/oracle-yk1028/x/atom/types"
+	"github.com/yk1028/oracle-yk1028/x/oracle/client/cli"
+	oracletypes "github.com/yk1028/oracle-yk1028/x/oracle/types"
 	rpctypes "github.com/tendermint/tendermint/rpc/core/types"
 
 	"github.com/spf13/cobra"

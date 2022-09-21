@@ -8,8 +8,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/relevant-community/oracle/x/oracle/exported"
-	"github.com/relevant-community/oracle/x/oracle/types"
+	"github.com/yk1028/oracle-yk1028/x/oracle/exported"
+	"github.com/yk1028/oracle-yk1028/x/oracle/types"
 	"github.com/spf13/cobra"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 	tendermint "github.com/tendermint/tendermint/types"

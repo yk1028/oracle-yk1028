@@ -1,5 +1,5 @@
 syntax = "proto3";
-package relevantcommunity.oracle.oracle;
+package yk1028.oracle.oracle;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
@@ -11,50 +11,50 @@ import "cosmos_proto/cosmos.proto";
 
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/relevant-community/oracle/x/oracle/types";
+option go_package = "github.com/yk1028/oracle-yk1028/x/oracle/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Params queries the parameters of othe racle module
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/params";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/params";
   }
 
   // PendingRounds queries the pending Rounds of the oracle module
   rpc PendingRounds(QueryPendingRoundsRequest) returns (QueryPendingRoundsResponse) {
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/pending_rounds/{claim_type}";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/pending_rounds/{claim_type}";
   }
 
   // LastFinalizedRound queries the pending Rounds of the oracle module
   rpc LastFinalizedRound(QueryLastFinalizedRoundRequest) returns (QueryLastFinalizedRoundResponse) {
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/finalized_round/{claim_type}";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/finalized_round/{claim_type}";
   }
 
   // Vote queries the parameters of the oracle module
   rpc Round(QueryRoundRequest) returns (QueryRoundResponse) {
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/round/{claimType}/{roundId}";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/round/{claimType}/{roundId}";
   }
 
   // Votes queries the parameters of the oracle module
   rpc AllRounds(QueryAllRoundsRequest) returns (QueryAllRoundsResponse) {
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/all_rounds";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/all_rounds";
   }
 
   // AllClaims queries all claims with pagination.
 	rpc AllClaims(QueryAllClaimsRequest) returns (QueryAllClaimsResponse){
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/allclaims";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/allclaims";
   };
 
   // Claim queries claims based on claim hash.
   rpc Claim(QueryClaimRequest) returns (QueryClaimResponse){
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/claim/{claim_hash}";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/claim/{claim_hash}";
   };
 
   rpc QueryDelegeateAddress(QueryDelegeateAddressRequest) returns (QueryDelegeateAddressResponse) {
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/delegate/{validator}";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/delegate/{validator}";
   }
   rpc QueryValidatorAddress(QueryValidatorAddressRequest) returns (QueryValidatorAddressResponse) {
-    option (google.api.http).get = "/relevantcommunity/oracle/oracle/validator/{delegate}";
+    option (google.api.http).get = "/yk1028/oracle-yk1028/oracle/validator/{delegate}";
   }
 }
 

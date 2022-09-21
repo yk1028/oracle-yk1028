@@ -17,10 +17,10 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/relevant-community/oracle/x/atom/client/cli"
-	"github.com/relevant-community/oracle/x/atom/client/rest"
-	"github.com/relevant-community/oracle/x/atom/keeper"
-	"github.com/relevant-community/oracle/x/atom/types"
+	"github.com/yk1028/oracle-yk1028/x/atom/client/cli"
+	"github.com/yk1028/oracle-yk1028/x/atom/client/rest"
+	"github.com/yk1028/oracle-yk1028/x/atom/keeper"
+	"github.com/yk1028/oracle-yk1028/x/atom/types"
 )
 
 var (

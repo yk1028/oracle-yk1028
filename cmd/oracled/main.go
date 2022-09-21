@@ -4,8 +4,8 @@ import (
 	"os"
 
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/relevant-community/oracle/app"
-	"github.com/relevant-community/oracle/cmd/oracled/cmd"
+	"github.com/yk1028/oracle-yk1028/app"
+	"github.com/yk1028/oracle-yk1028/cmd/oracled/cmd"
 )
 
 func main() {
