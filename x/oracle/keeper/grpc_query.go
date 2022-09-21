@@ -10,7 +10,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 	proto "github.com/gogo/protobuf/proto"
-	"github.com/relevant-community/oracle/x/oracle/types"
+	"github.com/yk1028/oracle-yk1028/x/oracle/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

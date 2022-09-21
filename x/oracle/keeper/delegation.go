@@ -4,7 +4,7 @@ import (
 	"bytes"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/relevant-community/oracle/x/oracle/types"
+	"github.com/yk1028/oracle-yk1028/x/oracle/types"
 )
 
 // SetValidatorDelegateAddress sets a new address that will have the power to send data on behalf of the validator

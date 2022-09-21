@@ -5,7 +5,7 @@ import (
 	"sort"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/relevant-community/oracle/x/atom/types"
+	"github.com/yk1028/oracle-yk1028/x/atom/types"
 )
 
 func (k Keeper) SetAtomUsd(ctx sdk.Context, atomUsd types.AtomUsd) {

@@ -15,7 +15,7 @@ import (
 	// "github.com/cosmos/cosmos-sdk/client/flags"
 	// sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/relevant-community/oracle/x/atom/types"
+	"github.com/yk1028/oracle-yk1028/x/atom/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

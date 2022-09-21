@@ -2,7 +2,7 @@ package keeper_test
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/relevant-community/oracle/x/oracle/types"
+	"github.com/yk1028/oracle-yk1028/x/oracle/types"
 )
 
 const claimType = "test"

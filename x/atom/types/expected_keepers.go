@@ -2,8 +2,8 @@ package types
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	oracle "github.com/relevant-community/oracle/x/oracle/exported"
-	oracletypes "github.com/relevant-community/oracle/x/oracle/types"
+	oracle "github.com/yk1028/oracle-yk1028/x/oracle/exported"
+	oracletypes "github.com/yk1028/oracle-yk1028/x/oracle/types"
 	tmbytes "github.com/tendermint/tendermint/libs/bytes"
 )
 

@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 
 	"github.com/cosmos/cosmos-sdk/snapshots"
-	"github.com/relevant-community/oracle/app/params"
-	"github.com/relevant-community/oracle/cmd/oracled/cmd/worker"
+	"github.com/yk1028/oracle-yk1028/app/params"
+	"github.com/yk1028/oracle-yk1028/cmd/oracled/cmd/worker"
 
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
@@ -34,8 +34,8 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
-	"github.com/relevant-community/oracle/app"
-	oraclecli "github.com/relevant-community/oracle/x/oracle/client/cli"
+	"github.com/yk1028/oracle-yk1028/app"
+	oraclecli "github.com/yk1028/oracle-yk1028/x/oracle/client/cli"
 )
 
 var ChainID string

@@ -2,7 +2,7 @@ package app
 
 import (
 	"github.com/cosmos/cosmos-sdk/std"
-	"github.com/relevant-community/oracle/app/params"
+	"github.com/yk1028/oracle-yk1028/app/params"
 )
 
 // MakeEncodingConfig creates an EncodingConfig for testing

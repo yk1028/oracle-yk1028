@@ -2,8 +2,8 @@ package atom
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/relevant-community/oracle/x/atom/keeper"
-	"github.com/relevant-community/oracle/x/atom/types"
+	"github.com/yk1028/oracle-yk1028/x/atom/keeper"
+	"github.com/yk1028/oracle-yk1028/x/atom/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis
